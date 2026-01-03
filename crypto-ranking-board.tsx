@@ -129,7 +129,7 @@ export default function Component() {
               <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full flex items-center justify-center">
                 <span className="text-sm font-bold text-black">₿</span>
               </div>
-              암호화폐 순위
+              Gemini 대박 코인 랭킹
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0">
