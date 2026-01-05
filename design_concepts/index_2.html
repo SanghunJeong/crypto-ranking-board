@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>암호화폐 랭킹 보드 - 사이버펑크</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .neon-glow {
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #f0f;
+        }
+        .border-neon-blue {
+            border-color: #0ff !important;
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="font-mono antialiased">
+    <div class="min-h-screen bg-zinc-950 text-fuchsia-300 p-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-zinc-900 border border-blue-700/50 rounded-md shadow-lg shadow-blue-500/20">
+          <div class="border-b border-blue-700/50 p-4">
+            <h2 class="text-2xl font-bold text-teal-300 flex items-center gap-2 neon-glow">
+              <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-fuchsia-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/50">
+                <span class="text-sm font-bold text-black">₿</span>
+              </div>
+              Gemini 대박 코인 랭킹
+            </h2>
+          </div>
+          <div class="p-0">
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b border-blue-700/50 bg-zinc-800/50">
+                    <th class="text-left p-4 text-blue-400 font-medium">순위</th>
+                    <th class="text-left p-4 text-blue-400 font-medium">이름</th>
+                    <th class="text-right p-4 text-blue-400 font-medium">가격</th>
+                    <th class="text-right p-4 text-blue-400 font-medium">24시간 변동률</th>
+                    <th class="text-right p-4 text-blue-400 font-medium hidden md:table-cell">시가총액</th>
+                    <th class="text-right p-4 text-blue-400 font-medium hidden lg:table-cell">거래량 (24시간)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/30">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">1</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/bitcoin.png" alt="비트코인" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">비트코인</div>
+                            <div class="text-sm text-teal-400">BTC</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$43,250.67</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-green-700/50 bg-green-900/40 text-green-300/80 shadow-md shadow-green-500/10">
+                          <span class="w-3 h-3">▲</span>
+                          +2.45%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$847.50B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$28.50B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/50">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">2</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/ethereum.png" alt="이더리움" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">이더리움</div>
+                            <div class="text-sm text-teal-400">ETH</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$2,580.34</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-red-700/50 bg-red-900/40 text-red-300/80 shadow-md shadow-red-500/10">
+                          <span class="w-3 h-3">▼</span>
+                          -1.23%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$310.20B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$15.20B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/30">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">3</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/tether.png" alt="테더" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">테더</div>
+                            <div class="text-sm text-teal-400">USDT</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$1.00</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-green-700/50 bg-green-900/40 text-green-300/80 shadow-md shadow-green-500/10">
+                          <span class="w-3 h-3">▲</span>
+                          +0.02%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$95.80B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$42.10B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/50">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">4</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/bnb.png" alt="바이낸스 코인" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">바이낸스 코인</div>
+                            <div class="text-sm text-teal-400">BNB</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$315.78</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-green-700/50 bg-green-900/40 text-green-300/80 shadow-md shadow-green-500/10">
+                          <span class="w-3 h-3">▲</span>
+                          +3.67%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$47.30B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$1.80B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/30">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">5</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/solana.png" alt="솔라나" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">솔라나</div>
+                            <div class="text-sm text-teal-400">SOL</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$98.45</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-green-700/50 bg-green-900/40 text-green-300/80 shadow-md shadow-green-500/10">
+                          <span class="w-3 h-3">▲</span>
+                          +5.23%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$43.90B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$2.10B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/50">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">6</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/xrp.png" alt="리플" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">리플</div>
+                            <div class="text-sm text-teal-400">XRP</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$0.6234</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-red-700/50 bg-red-900/40 text-red-300/80 shadow-md shadow-red-500/10">
+                          <span class="w-3 h-3">▼</span>
+                          -2.87%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$35.20B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$1.50B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/30">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">7</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/usdc.webp" alt="USD 코인" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">USD 코인</div>
+                            <div class="text-sm text-teal-400">USDC</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$1.00</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-red-700/50 bg-red-900/40 text-red-300/80 shadow-md shadow-red-500/10">
+                          <span class="w-3 h-3">▼</span>
+                          -0.01%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$32.10B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$5.80B</span>
+                      </td>
+                  </tr>
+                  <tr class="border-b border-blue-700/30 hover:bg-zinc-800/50 transition-colors bg-zinc-900/50">
+                      <td class="p-4"><span class="text-fuchsia-200 font-medium">8</span></td>
+                      <td class="p-4">
+                        <div class="flex items-center gap-3">
+                          <img src="/coin/cardano.png" alt="카르다노" class="w-8 h-8 rounded-full border border-blue-500/50" />
+                          <div>
+                            <div class="font-semibold text-fuchsia-300">카르다노</div>
+                            <div class="text-sm text-teal-400">ADA</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-4 text-right">
+                        <span class="font-bold text-yellow-300">$0.4567</span>
+                      </td>
+                      <td class="p-4 text-right">
+                        <div class="inline-flex items-center gap-1 justify-end px-2.5 py-0.5 rounded-sm text-xs font-bold border border-green-700/50 bg-green-900/40 text-green-300/80 shadow-md shadow-green-500/10">
+                          <span class="w-3 h-3">▲</span>
+                          +1.89%
+                        </div>
+                      </td>
+                      <td class="p-4 text-right hidden md:table-cell">
+                        <span class="text-fuchsia-200">$16.20B</span>
+                      </td>
+                      <td class="p-4 text-right hidden lg:table-cell">
+                        <span class="text-fuchsia-200">$890.00M</span>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center text-zinc-600 text-sm">
+          <p>데이터는 60초마다 업데이트됩니다 • Powered by CoinAPI</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
